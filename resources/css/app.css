@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&display=swap');
+
+:root{
+
+    --color-black: rgb(40, 40, 40);
+    --color-blue: rgb(56,134,194);
+    --color-green: #87BA37;
+    --color-blue: rgb(94, 176, 240);
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section{
+    /*min-height: calc(100vh - 240px); */
+    height: 100%;
+    @apply w-full min-h-screen flex ;
+}
+
+main{
+    /*min-height: calc(100vh - 240px); */
+    height: 100%;
+    @apply w-full min-h-screen flex ;
+}
+
+/* Les titres */
+
+h1 {
+    font-family: 'Marck Script', cursive;
+    @apply text-white text-center text-6xl font-bold mb-8;
+}
+
+h5 {
+    text-shadow: 2px 2px 0 var(--color-black), 2px -2px 0 var(--color-black), -2px 2px 0 var(--color-black), -2px -2px 0 var(--color-black), 2px 0px 0 var(--color-black), 0px 2px 0 var(--color-black), -2px 0px 0 var(--color-black), 0px -2px 0 var(--color-black);
+    @apply text-white text-xl font-bold;
+}
+
+.shawdowed{
+    text-shadow: 2px 2px 0 var(--color-black), 2px -2px 0 var(--color-black), -2px 2px 0 var(--color-black), -2px -2px 0 var(--color-black), 2px 0px 0 var(--color-black), 0px 2px 0 var(--color-black), -2px 0px 0 var(--color-black), 0px -2px 0 var(--color-black);
+}
+
+/* Formulaires */
+
+.label{
+    @apply text-gray-900 font-bold text-xl;
+}
+
+select{
+    @apply w-48 text-center;
+}
+
+textarea{
+    @apply resize-none w-full h-40;
+}
+.link1{
+    @apply text-white;
+}
+
+.entete{
+    @apply font-bold text-lg text-white;
+}
+
+.monShadow{
+    @apply border shadow-xl rounded;
+}
+
+input{
+    @apply rounded-md shadow-sm border-red-300 ;
+}
+
+input:focus{
+    @apply border-red-500;
+}
+
+/* classes pour l'affichage victoire defaite null*/
+
+.victoire {
+    @apply font-bold text-green-700 text-base;
+}
+
+.defaite {
+    @apply font-bold text-red-700 text-base;
+}
+
+.null {
+    @apply font-bold text-yellow-500 text-base;
+}
+
+.bientot {
+    @apply font-bold italic text-base;
+}
